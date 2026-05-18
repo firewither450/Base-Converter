@@ -62,4 +62,4 @@ class Num:
 
 
 number = Num("A4", 16)
-print(number.base(16**2))
+print(number.base(2))
