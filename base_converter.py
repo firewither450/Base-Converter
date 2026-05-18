@@ -1,5 +1,4 @@
-import unicodedata
-import math
+from math import floor, log
 
 class Num:
   def __init__(self, x, base = 10):
@@ -27,10 +26,10 @@ class Num:
         chars = _get_chars(base)
         table = []
         x = int(n)
-        exp = math.floor(math.log(x,base))
+        exp = floor(log(x,base))
         for i in range(exp+1):
-          table.append(math.floor(x/(base**exp)))
-          x = x - base**exp * (math.floor(x/(base**exp)))
+          table.append(floor(x/(base**exp)))
+          x = x - base**exp * (floor(x/(base**exp)))
           exp -= 1
         final = ""
         for i in table:
@@ -61,5 +60,5 @@ class Num:
     return self.num
 
 
-number = Num("A4", 16)
-print(number.base(2))
+number = Num("321", 5)
+print(number.base(0))
