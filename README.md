@@ -7,5 +7,6 @@ This contains a the definition of a Num object that has a function  base(n: int)
 When initialised, input the number in any base as a string and the base as an integer.
 To get the max amount of characters, set the parameter as 0.
 It still needs plenty of optimisation for larger bases.
+The code only works for positive integers for now, floating point numbers and negatives will be supported in the future.
 
 This is a personal project to test my python knowledge and skill, I am aware there are easier ways to achive this. 
